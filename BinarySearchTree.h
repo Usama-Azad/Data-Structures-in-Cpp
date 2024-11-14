@@ -23,8 +23,8 @@ class BST
         if (root != NULL)
         {
             std::cout << root->data << std::endl; 
-            if (root->left) inorder(root->left);
-            if (root->right) inorder(root->right);
+            if (root->left) preorder(root->left);
+            if (root->right) preorder(root->right);
         }
     }
 
@@ -32,8 +32,8 @@ class BST
     {
         if (root != NULL)
         {
-            if (root->left) inorder(root->left);
-            if (root->right) inorder(root->right);
+            if (root->left) postorder(root->left);
+            if (root->right) postorder(root->right);
             std::cout << root->data << std::endl; 
         }
     }
